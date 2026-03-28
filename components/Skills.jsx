@@ -9,7 +9,7 @@ const Skills = () => {
         initial = {{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
-        id='skills' className='items-center w-full px-[12%] py-10 scroll-mt-20'>
+        id='skills' className='items-center w-full px-4 sm:px-8 lg:px-[12%] py-10 scroll-mt-20'>
             <motion.h4 
             initial = {{opacity: 0, y: -20}}
             whileInView={{opacity: 1, y: 0}}
@@ -26,11 +26,11 @@ const Skills = () => {
                 initial = {{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 0.3}}
-                className='flex items-center justify-center gap-6 sm:gap-5'>
+                className='flex flex-wrap items-center justify-center gap-4 sm:gap-5'>
                     {skillsData0.map((skill, index) => (
                         <motion.li 
                         whileHover={{scale: 1.05}}
-                        className='flex items-center justify-center mt-4 w-24 sm:w-26 aspect-square border border-gray-400 rounded-lg hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-xl/20 ' key={index}><Image src={skill} alt='Skill' className='w-16 sm:w-18' /></motion.li>
+                        className='flex items-center justify-center mt-4 w-20 sm:w-24 aspect-square border border-gray-400 rounded-lg hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-xl/20 ' key={index}><Image src={skill} alt='Skill' className='w-12 sm:w-16' /></motion.li>
                     ))}
                 </motion.ul>
                 <motion.ul 

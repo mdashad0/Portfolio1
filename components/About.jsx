@@ -7,7 +7,7 @@ const About = () => {
         initial = {{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
-        id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+        id='about' className='w-full px-4 sm:px-8 lg:px-[12%] py-10 scroll-mt-20'>
             <motion.h4 
             initial = {{opacity: 0, y: -20}}
             whileInView={{opacity: 1, y: 0}}
@@ -22,7 +22,7 @@ const About = () => {
             initial = {{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.8}}
-            className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+            className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-20'>
                 <motion.div 
                 initial = {{opacity: 0}}
             whileInView={{opacity: 1}}

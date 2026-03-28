@@ -5,11 +5,11 @@ import { motion } from "motion/react"
 
 const Work = () => {
     return (
-        <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
+        <div id='work' className='w-full px-4 sm:px-8 lg:px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg font-Ovo'>Project</h4>
             <h2 className='text-center text-5xl font-Ovo bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-blue-600 text-transparent'>My latest work</h2>
             <p className='text-center text-lg font-Ovo'>Here are some of the projects I've worked on recently.</p>
-            <div className='grid grid-cols-3 my-10 gap-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5'>
                 {workData.map((project, index) => (
                     project.Link ? (
                         <a
